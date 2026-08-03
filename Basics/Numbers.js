@@ -22,12 +22,29 @@ const balance = new Number(73266499.7782);
 // console.log(Math.ceil(3.45));
 // console.log(Math.floor(89.89));
 // console.log(Math.min(3, 4, 3));
-console.log(Math.random());
+// console.log(Math.random());
 let max = 20;
 let min = 10;
 
-let random = (Math.random() * (max - min + 1)) + min;
-console.log(random);
+// let random = (Math.random() * (max - min + 1)) + min;
+// console.log(random);
+
+let myDate = new Date();
+
+// console.log(Math.floor(myDate.getTime()/1000));
+// console.log(myDate.toDateString());
+// console.log(myDate.toString());
+// console.log(myDate.toLocaleDateString());
+
+
+let time = myDate.toLocaleTimeString('default', {
+    weekday: "short"
+})
+console.log(time);
+
+
+
+
 
 
 
